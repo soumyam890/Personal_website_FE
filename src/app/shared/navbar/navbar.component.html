@@ -12,24 +12,39 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Follow me on Stack overflow" data-placement="bottom" href="https://stackoverflow.com/users/5182321/s-m" target="_blank">
-                        <i class="fa fa-stack-overflow"></i>
+                        <i class="fa fa-stack-overflow icon-font"></i>
                         <p class="d-lg-none">Stack Overflow</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Connect me on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/soumya-mohan-230a4a78/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-linkedin icon-font"></i>
                         <p class="d-lg-none">LinkedIn</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://github.com/soumyam890" target="_blank">
-                        <i class="fa fa-github"></i>
+                        <i class="fa fa-github icon-font"></i>
                         <p class="d-lg-none">GitHub</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a href="#" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> View my Blogs</a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" [routerLink]="['home']" [fragment]="'about'">
+                        <p class="d-lg-none">About Me</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" [routerLink]="['home']" [fragment]="'skills'">
+                        <p class="d-lg-none">My Skills</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" [routerLink]="['home']" [fragment]="'experience'">
+                        <p class="d-lg-none">My Experience</p>
+                    </a>
                 </li>
             </ul>
         </div>
