@@ -11,6 +11,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 import { ComponentsComponent } from './components/components.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const routes = [
   {
@@ -34,7 +35,7 @@ const routes = [
       anchorScrolling: 'enabled',
     })
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
