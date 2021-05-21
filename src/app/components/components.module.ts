@@ -6,7 +6,7 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
 import { ComponentsComponent } from './components.component';
-
+import { ExperianceComponent } from './../experiance/experiance.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -14,11 +14,12 @@ import { ComponentsComponent } from './components.component';
         NgbModule,
         NouisliderModule,
         RouterModule,
-        JwBootstrapSwitchNg2Module
+        JwBootstrapSwitchNg2Module,
     ],
     declarations: [
         ComponentsComponent,
+        ExperianceComponent
     ],
-    exports:[ ComponentsComponent ]
+    exports: [ComponentsComponent]
 })
 export class ComponentsModule { }
